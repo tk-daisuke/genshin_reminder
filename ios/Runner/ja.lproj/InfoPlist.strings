@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Runner
+
+  Created by 佐藤 大輔 on 2021/09/25.
+  
+*/
+CFBundleDisplayName = "秘境リマインダー";
+NSUserTrackingUsageDescription = "最適化された広告を表示するために利用されます";

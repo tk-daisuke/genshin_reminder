@@ -1,0 +1,155 @@
+name: genshin_reminder
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.13.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # 多言語ライブラリの本体
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  #firebase
+  firebase_core: ^1.10.5 #https://pub.dev/packages/firebase_core
+  cloud_firestore: ^3.1.4 #https://pub.dev/packages/cloud_firestore
+  firebase_analytics: ^9.0.3 #https://pub.dev/packages/firebase_analytics/example
+  # google_mobile_ads: 0.13.2 #https://pub.dev/packages/google_mobile_ads
+  #auth
+  firebase_auth: ^3.3.3 #https://pub.dev/packages/firebase_auth
+  #
+  app_tracking_transparency: ^2.0.2 #https://pub.dev/packages/app_tracking_transparency/install
+  flutter_progress_hud: ^2.0.0 #https://pub.dev/packages/flutter_progress_hud
+  package_info_plus: ^1.0.6 #https://pub.dev/packages/package_info_plus
+  version: ^2.0.0 #https://pub.dev/packages/version
+  google_fonts: ^2.1.0 #https://pub.dev/packages/google_fonts/example
+  #通知
+  flutter_local_notifications: ^8.2.0 #https://pub.dev/packages/flutter_local_notifications
+  platform: ^3.0.0
+  # timezone: ^0.7.0 #https://pub.dev/packages/timezone
+
+  #state
+  hooks_riverpod: ^1.0.3
+  freezed_annotation: ^1.1.0 #https://pub.dev/packages/freezed_annotation
+  json_annotation: ^4.4.0 #https://pub.dev/packages/json_annotation
+  #zenn 勉強
+  # shared_preferences: ^2.0.5 #https://pub.dev/packages/shared_preferences
+  #log
+  simple_logger: ^1.8.1 #https://pub.dev/packages/simple_logger
+  flutter_native_timezone: ^2.0.0 #https://pub.dev/packages/flutter_native_timezone
+  url_launcher: ^6.0.10
+  #多言語
+  intl: ^0.17.0 #https://pub.dev/packages/intl/install
+  app_settings: ^4.1.1 #https://pub.dev/packages/app_settings
+  badges: ^2.0.1 #https://pub.dev/packages/badges/install
+  notification_permissions: ^0.6.1 #https://pub.dev/packages/notification_permissions
+  auto_size_text: ^3.0.0-nullsafety.0 #https://pub.dev/packages/auto_size_text
+  settings_ui: ^2.0.2 #https://pub.dev/packages/settings_ui
+  flutter_slidable: ^0.6.0 #https://pub.dev/packages/flutter_slidable/example
+  firebase_crashlytics: ^2.2.3
+  launch_review: ^3.0.1 #https://pub.dev/packages/launch_review
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  
+  # intl_translation: any  
+  # flutter_native_splash: ^1.2.1 #https://pub.dev/packages/flutter_native_splash/install
+  build_runner: any
+  freezed: ^1.1.1 #https://pub.dev/packages/freezed
+
+  json_serializable: any #https://pub.dev/packages/json_serializable/install
+  change_app_package_name: ^1.0.0 #https://pub.dev/packages/change_app_package_name/install
+  flutter_lints: ^1.0.4
+  analyzer: ^3.2.0
+
+  
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+    - assets/images/app/
+    - assets/images/characters/albedo/
+    - assets/images/characters/amber/
+    - assets/images/characters/ayaka/
+    - assets/images/characters/barbara/
+    - assets/images/characters/beidou/
+    - assets/images/characters/bennett/
+    - assets/images/characters/chongyun/
+    - assets/images/characters/diluc/
+    - assets/images/characters/diona/
+    - assets/images/characters/eula/
+    - assets/images/characters/fischl/
+    - assets/images/characters/ganyu/
+    - assets/images/characters/hu-tao/
+    - assets/images/characters/jean/
+    - assets/images/characters/kazuha/
+    - assets/images/characters/keqing/
+    - assets/images/characters/kaeya/
+    - assets/images/characters/klee/
+    - assets/images/characters/lisa/
+    - assets/images/characters/mona/
+    - assets/images/characters/ningguang/
+    - assets/images/characters/noelle/
+    - assets/images/characters/qiqi/
+    - assets/images/characters/razor/
+    - assets/images/characters/rosaria/
+    - assets/images/characters/sucrose/
+    - assets/images/characters/tartaglia/
+    - assets/images/characters/traveler/
+    - assets/images/characters/kujou-sara/
+    - assets/images/characters/raiden-shogun/
+    - assets/images/characters/venti/
+    - assets/images/characters/xiangling/
+    - assets/images/characters/xiao/
+    - assets/images/characters/xingqiu/
+    - assets/images/characters/xinyan/
+    - assets/images/characters/yanfei/
+    - assets/images/characters/zhongli/
+    - assets/images/characters/yoimiya/	
+    - assets/images/characters/sayu/
+    - assets/images/characters/aloy/
+    - assets/images/characters/sangonomiya-kokomi/
+    - assets/images/characters/thoma/
+    - assets/images/characters/arataki_itto/
+    - assets/images/characters/gorou/
+    - assets/images/characters/shenhe/
+    - assets/images/characters/yun-jin/
+    - assets/images/characters/yaemiko/
+    - assets/images/characters/ayato/
+    - assets/images/characters/yelan/
+    # nations
+    - assets/images/nations/inazuma/
+    - assets/images/nations/liyue/
+    - assets/images/nations/mondstadt/
+    # domains
+    - assets/images/domain/100/
+    - assets/images/domain/200/
+    - assets/images/domain/300/
+    - assets/images/domain/20100/
+    - assets/images/domain/20200/
+    - assets/images/domain/20300/
+    - assets/images/material/
+    # weapons
+    - assets/images/weapons/bows/
+    - assets/images/weapons/catalysts/
+    - assets/images/weapons/claymores/
+    - assets/images/weapons/polearms/
+    - assets/images/weapons/swords/
+
+    - licenses/google_fonts/
+    - licenses/
+    - assets/images/app/guide/
+  
+flutter_native_splash:
+  image: "assets/images/app/splash.png"
+  color: "#0A1C31"
+

@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Runner
+
+  Created by 佐藤 大輔 on 2021/09/25.
+  
+*/
+CFBundleDisplayName = "GI Reminder";
+NSUserTrackingUsageDescription = "Your data will be used to provide you a better and personalized advertising experience";
